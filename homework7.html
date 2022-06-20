@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <article>
+        <p>Alphabet</p>
+        <section id="section1">    
+        <p> A B C D E F G </p>
+        <p>come on out and play with me.</p>
+        <p>H I J </p>
+        <p>come and play.</p> 
+        <p>K L M </p>
+        <p>come with them. </p>
+        <p>N O P </p>
+        <p>near the tree. </p>
+        <p>Q R S T U V </p>
+        <p>Oh, how happy we will be. </p>
+        <p>W X Y Z </p>
+        <p>Lot's of fun for you and me. </p>
+        </section>
+        <button id="button1" onclick="change()">Нажми меня</button>
+        <p id="alphabet"></p]>
+</article>    
+<script>
+    
+    function change() {
+
+let elems = document.querySelectorAll("section > p:nth-child(odd)");    
+console.log(elems);
+
+        for (elem of elems) {
+         alphabet.innerHTML += elem.innerHTML;
+        }    
+
+        let sections = document.getElementById("section1");   
+let f = sections.getElementsByTagName("p"); 
+        console.log(f);
+        for (index of f) {
+            index.style = `
+                border: 1px solid rgb(33, 23, 98);
+                color: indigo;
+                font-size: 18px;
+                font-family: 'Courier New', Courier, monospace;
+                background-color: aliceblue;
+                
+            `;
+        }    
+
+        }
+
+       // С помощью метода getElementsByTagName выбрать все параграфы только внутри блока <section>. С помощью свойства style.cssText заключить каждую строку считалочки в рамочку, задать шрифт, размер шрифта, цвет фона, цвет текста и т.п.
+
+
+
+// let arrA = f.getElementsByTagName("a");   
+// // console.log(arrA);
+
+//     // arrA - массив
+//         // Заменить
+//         //link1.html ... link5.html 
+//         // Ссылка 1 ...  Ссылка 5
+    
+//         let n = 1;
+//      for (let index of arrA) {
+//     index.href = `link${n}.html`;
+//     index.innerHTML = `Ссылка ${n++}`;
+//      }   
+
+//        } 
+
+
+</script>
+
+</body>
+</html>
